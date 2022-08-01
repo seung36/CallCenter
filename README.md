@@ -10,3 +10,9 @@ It's ok if you don't understand how to read files.
  "First record of texts, <incoming number> texts <answering number> at time <time>"
  "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
  """
+ """
+TASK 1:
+How many different telephone numbers are there in the records?
+Print a message:
+"There are <count> different telephone numbers in the records."
+"""
