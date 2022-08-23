@@ -1,9 +1,8 @@
 # CallCenter
-"""
-Read file into texts and calls.
-It's ok if you don't understand how to read files.
-"""
-"""
+
+###Read file into texts and calls.
+###It's ok if you don't understand how to read files.
+
  TASK 0:
  What is the first record of texts and what is the last record of calls?
  Print messages:
