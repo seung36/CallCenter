@@ -46,7 +46,7 @@ were made to a number also starting with "(080)"?
 Print the answer as a part of a message::
 "<percentage> percent of calls from fixed lines in Bangalore are calls
 to other fixed lines in Bangalore."
-The percentage should have 2 decimal digits.<br>
+The percentage should have 2 decimal digits.<br/>
 
 TASK 4:
 The telephone company want to identify numbers that might be doing
