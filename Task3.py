@@ -46,11 +46,46 @@ Print the answer as a part of a message::
 to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
+list = [];
+dict = {};
+sum = 0;
 #create a set named code
 for arr in calls:
   caller=arr[0]
   receiver=arr[1]
   #if the caller's phone number's first four letter equals '(080)'
+
+if caller.startswith("(080)"):
+    if receiver[0] == "(":
+      endIndex = receiver.find(")")
+      fixedLCode = receiver[1: endIndex]
+      #print(fixedLCode)
+      if (fixedLCode in dict):
+        dict[fixedLCode] = dict[fixedLCode] + 1
+      else:
+         dict[fixedLCode] = 1
+    if receiver.find(" ") > 0:
+      endIndex = receiver.find(" ")
+      mobileCode = receiver[0: endIndex - 1]
+      if (mobileCode in dict):
+        dict[mobileCode] = dict[mobileCode] + 1
+      else:
+         dict[mobileCode] = 1
+    elif receiver.startswith("140"):
+      teleMCode = "140"
+      if (teleMCode in dict):
+        dict[teleMCode] = dict[teleMCode] + 1
+      else:
+        dict[teleMCode] = 1
+for key in dict:
+  sum = sum + int(dict[key])
+sortedKey = sorted(dict.keys())
+print("The numbers called by people in Bangalore have codes:")
+for eachNum in sortedKey:
+  print(eachNum)
+a = int(dict["080"]) / sum * 100
+print("{:.4}".format(a),"percent of calls from fixed lines in Bangalore are calls"
+ ,"to other fixed lines in Bangalore.")
   
     #if the first letter is '(' find the index of ')' then add the number string between paren
     #to the set
