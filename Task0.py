@@ -4,12 +4,12 @@ It's ok if you don't understand how to read files.
 """
 import csv
 #with open('texts.csv', 'r') as f: #uncomment it before submitting
-with open('/Users/seungkukkim/Downloads/P0/texts.csv', 'r') as f:#delete before submitting
+with open('texts.csv', 'r') as f:#delete before submitting
     reader = csv.reader(f)
     texts = list(reader)
 
 #with open('calls.csv', 'r') as f:
-with open('/Users/seungkukkim/Downloads/P0/calls.csv', 'r') as f:#delete before submitting
+with open('calls.csv', 'r') as f:#delete before submitting
     reader = csv.reader(f)
     calls = list(reader)
 
