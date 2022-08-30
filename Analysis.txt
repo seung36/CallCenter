@@ -1,0 +1,14 @@
+P0 :  O(1)
+Because using an index to access an item takes constant time.
+
+P1 :  O(n^2)
+There is a nested loop so it takes quadratic time.
+
+P2 :  O(n)
+For loop takes linear time.
+
+P3 :  O(n)
+Sorting takes nlog(n) time here.
+
+P4 :  O(nlog(n))
+Sorting takes nlog(n) time here.
