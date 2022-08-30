@@ -24,4 +24,28 @@ Print a message:
 <list of numbers>
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
+list = []
+dictC = set() #numbers that called other numbers
+dictR = set() #set with received call numbers
+dictST = set() #set with numbers that sent texts
+dictRT = set() #set with num that received text
+setTeleM = set()#set with telemarkter number
+for num in calls:
+  dictC.add(num[0])
+  dictR.add(num[1])
 
+for num in texts:
+  dictST.add(num[0])
+  dictST.add(num[1])
+
+for num in dictC:
+  if num not in dictST and num not in dictR:
+    setTeleM.add(num)
+
+#print(setTeleM)
+for num in setTeleM:
+  list.append(num)
+list.sort();
+print("These numbers could be telemarketers: ")
+for num in list:
+  print(num)
